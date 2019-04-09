@@ -15,14 +15,15 @@ public class BinarySearch {
 	
 	
 	public int binarySearch(int[] arr ,  int start , int  end  ,int searchElement) {
+		int flag =-1;
 	    if(end >= start ) {
-	    	int  mid = start + (end-start) / 2 ;
-			if(searchElement== arr[mid]) return  mid ;
-			if(searchElement <  arr[mid] ) return binarySearch(arr, start, mid  -1 , searchElement);
-			 binarySearch(arr, mid+1, end , searchElement); // 3 5
+	    	int  mid = start + end / 2 ;
+			if(searchElement== arr[mid])   flag=mid ;
+			if(searchElement >  arr[mid] ) flag= binarySearch(arr, start, mid -1  , searchElement);
+			flag= binarySearch(arr, mid+1, end , searchElement); // 3 5
 	    }
 		
-		return -1;
+		return flag;
 		
 		
 	}
