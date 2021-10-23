@@ -1,4 +1,4 @@
-package com.satya.geekandgeeks;
+package com.satya.array.sort;
 
 /* Java program for Merge Sort */
 class MergeSort 

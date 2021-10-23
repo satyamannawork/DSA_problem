@@ -11,7 +11,7 @@ public class Find2ndHighest {
 				first  = arr[i];
 				//System.out.println(first +"==="+second);
 			}
-			else if (arr[i] > second && arr[i]!=second) {
+			else if (arr[i] > second) {
 				second = arr[i];
 			}
 			
