@@ -1,4 +1,4 @@
-package com.satya.geekandgeeks;
+package com.satya.array.basic;
 
 public class BinarySearch {
 
@@ -18,7 +18,7 @@ public class BinarySearch {
 	public int binarySearch(int[] arr ,  int start , int  end  ,int searchElement) {
 		int flag =-1;
 	    if(end >= start ) {
-	    	int  mid = (start + end )/ 2 ;
+	    	int  mid = (end - start)/ 2 ;
 			if(searchElement == arr[mid])  {
 				flag=mid ;
 			}

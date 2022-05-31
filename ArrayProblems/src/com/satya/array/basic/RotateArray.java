@@ -1,4 +1,4 @@
-package com.satya.geekandgeeks;
+package com.satya.array.basic;
 
 
  //  rotate array or reverse array ,  basically we have to rotate it half of the length and

@@ -1,4 +1,4 @@
-package com.satya.geekandgeeks;
+package com.satya.array.basic;
 
 import java.util.HashMap;
 import java.util.Map;

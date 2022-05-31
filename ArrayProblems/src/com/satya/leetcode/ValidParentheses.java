@@ -13,7 +13,8 @@ public class ValidParentheses {
 	
 	
 	public static void main(String[] args) {
-		String st = "[[{}]]" ;
+		String st = "{this{is}valid}" ;
+		System.out.println(checkBalance(st));
 		
 		
 		
@@ -23,7 +24,7 @@ public class ValidParentheses {
 	
 	static boolean checkBalance(String st ){
 		Stack<Character> stack =  new Stack<Character>() ;
-		//char[]  chars =  new char[st.]
+		
 		for (int i =0  ; i<  st.toCharArray().length ;  i++) {
 			char ch  = st.charAt(i) ;
 			if (ch == '[' ||  ch == '{' || ch == '(') {
@@ -38,24 +39,23 @@ public class ValidParentheses {
 					check = stack.pop() ;
 					if (check == '}' || check ==')')
 						return false ;
-					break ;
+					
 				case '}' :  
 					check = stack.pop() ;
 					if (check == ']' || check ==')')
 						return false ;
-					break ;
 				case ')' :  
 					check = stack.pop() ;
-					if (check == '}' || check ==']')
+				     if (check == '}' || check ==']')
 						return false ;
-					break ;
+					
 				
 				}
 			}
 			
 		}
 		
-		return (stack.isEmpty()) ;
+		return true;
 		
 	}
 }

@@ -1,4 +1,4 @@
-package com.satya.geekandgeeks.practice_daily;
+package com.satya.array.basic;
 
 public class Sort_at_Glance {
 

@@ -1,4 +1,4 @@
-package com.satya.array.java_revisited;
+package com.satya.array.basic;
 
 import java.util.HashMap;
 import java.util.Map;

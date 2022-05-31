@@ -1,4 +1,4 @@
-package com.satya.geekandgeeks;
+package com.satya.array.basic;
 
 public class DiveandConq {
 	 static int sum  =0 ;
