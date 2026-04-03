@@ -15,15 +15,7 @@ public class DsaLinkedList {
         System.out.println("head is "  +list.head.data);
         System.out.println("traversing opposite direction");
         list.traverseReverseLinkedList(list.head);
-
-
-
-
-
-
-
-
-    }
+        }
 
 
     // singleton linked list
