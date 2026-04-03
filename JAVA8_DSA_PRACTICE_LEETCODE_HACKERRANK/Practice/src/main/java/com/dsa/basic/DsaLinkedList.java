@@ -13,6 +13,15 @@ public class DsaLinkedList {
         list.insertIntoNodeAtTail(new  Node(3));
         list.printAllNodes();;
         System.out.println("head is "  +list.head.data);
+        System.out.println("traversing opposite direction");
+        list.traverseReverseLinkedList(list.head);
+
+
+
+
+
+
+
 
     }
 
@@ -48,14 +57,22 @@ public class DsaLinkedList {
 
 
 
+    void traverseReverseLinkedList(Node node){
+         if(node == null ) return ;
+         traverseReverseLinkedList(node.node);
+         System.out.println("data is " + node.data);
+
+     }
+
     static class Node {
         Node(int data ){
             this.data = data ;
         }
-
         int data;
         Node node;
 
     }
+
+
 }
 
